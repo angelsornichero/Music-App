@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.index {
+    background-image: url(https://variety.com/wp-content/uploads/2022/07/Music-Streaming-Wars.jpg);
+    text-align: center;
+   
+}
+
+.present_div {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+   
+}
+.button {
+    background-color: #8e28ee;
+    height: 80px;
+    width: 200px;
+    border: #6c06cc solid 5px;
+    color: #aaa;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+
+}
+.button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.h1 {
+    font-size: 100px;
+    font-family: 'Work Sans', sans-serif;
+}

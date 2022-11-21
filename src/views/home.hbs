@@ -1,0 +1,53 @@
+<body class="bg-primary bg-gradient">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <span class="navbar-text">
+      Make, see and listens all Music.
+  </span>
+  <form class="form-inline my-2 my-lg-0 mr-sm-2">
+      <a class="btn btn-outline-danger form-inline mr-sm-0 my-sm-0" href="/login" type="submit">Log out</a>
+    </form>
+  
+</nav>
+<form action="/music/add" method="POST" class="formulator home-form">
+      <h1 class="title">Add Music</h1>
+
+       <div class="inputContainer">
+        <input type="text" name="name" class="input" placeholder="a">
+        <label for="" class="label">Music name</label>
+      </div>
+      
+      <div class="inputContainer">
+        <input type="text" name="artist" class="input" placeholder="a">
+        <label for="" class="label">Artist</label>
+      </div>
+      <input href="/" type="submit" class="submitBtn" value="Add">
+    
+        
+    </form>
+
+
+<div class="row">
+  {{#each songs}}
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title d-flex justify-content-between align-items-center">
+          {{ name }} 
+        </h4>
+        <p>{{ artist }} </p>
+      </div>
+    </div>
+  </div>
+{{else}}
+<div class="col-md-4 mx-auto sidebar-row">
+  <div class="card card-body text-center">
+    <p>No contacts saved yet</p>
+  </div>          
+</div>
+{{/each}}
+
+</body>
